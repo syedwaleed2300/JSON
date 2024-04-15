@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let student = {
+        //     "name": "waleed",
+        //     "age": 23,
+        //     "hobbies": ["singing", "playing guitar", "Football"],
+        //     "phobia":null,
+        //     "isSmart" : true,
+        //     "relatives": {
+        //         "cousin": "alisah",
+        //         "aunt": "samiya",
+        //         "fatherInLaw": "Uzair"
+        //     }
+        // }
+        // document.write(student.hobbies[2]);
+        // document.write(student.relative["aunt"]);
+
+        // var obj = {
+        //     "name": "alex"
+        // }
+        // document.write(obj.name);
+        // document.write(obj[name]);
+        // obj.name = "anusha";
+        // document.write(obj.name);
+        // document.write(obj[name]);
+
+        // var student = {
+        //     "name": "waleed",
+        //     "age": 23,
+        //     "phobia": null,
+        //     "isSmart": true,
+        // }
+        // document.write(JSON.stringify(student));
+        //document.write(student.name)
+        // for(value in student){
+        //    document.write(student["isSmart"] + "<br>")
+        // }
+
+        // var obj = {
+        //     "hobbies": ["singing", "playing guitar", "Football"],
+        //     "hello" : [1,2,3]
+        // }
+        // for(value in obj.hobbies){
+        //     document.write(obj.hobbies[value] + "<br>")
+        // }
+
+        let obj = {
+            "student": [{
+                "name": "waleed",
+                "id": 25,
+                "class": "9"
+
+            }, {
+                "name": "alisha",
+                "id": 25,
+                "class": "9"
+            }, {
+                "name": "wamiq",
+                "id": 25,
+                "class": "9"
+
+            }]
+        }
+        for (i in obj.student) {
+            for (value in obj.student[i]) {
+                document.write(obj.student[i][value] + "<br>")
+            }
+        }
+    </script>
+</body>
+
+</html>
